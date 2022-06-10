@@ -20,7 +20,7 @@ public class DBConnection {
 
  	 //creating connection with the database 
          con=DriverManager.getConnection
-                        ("jdbc:mysql://localhost:3306/user","root","Anjan#123");
+                        ("jdbc:mysql://localhost:3306/user","root","Anjan#123","insecureAuth : true");
 
         return con;   
       }catch(ClassNotFoundException | SQLException e)
